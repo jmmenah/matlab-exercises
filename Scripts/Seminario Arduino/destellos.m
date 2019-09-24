@@ -1,9 +1,8 @@
-%Script destellos. Programa que pide un n鷐ero de destellos y enciende
-% alternativamente los LEDs 13 y 9 dicho n鷐ero de veces durante un segundo.
-% Finalmente, se apagan los LEDs
+%Script destellos. Programa que pide un n煤mero de destellos y enciende alternativamente los LEDs 13 y 9 dicho n煤mero de veces durante un segundo.
+%Finalmente, se apagan los LEDs
 
 %Lectura de datos
-num = input('Introduzca un n鷐ero: '); % n鷐ero de destellos en cada Led
+num = input('Introduzca un n煤mero: '); % n煤mero de destellos en cada Led
  
 pinLed = [9 10 11 12 13];
 i = 1;
@@ -14,31 +13,31 @@ for cont = 1:num
     mi_arduino.digitalWrite(pinLed(3),0);
     mi_arduino.digitalWrite(pinLed(4),0);
     mi_arduino.digitalWrite(pinLed(5),0);
-    pause(0.5); %Para la ejecuci髇 un segundo 
+    pause(0.5); %Para la ejecuci贸n un segundo 
     mi_arduino.digitalWrite(pinLed(1),0);
     mi_arduino.digitalWrite(pinLed(2),1);
     mi_arduino.digitalWrite(pinLed(3),0);
     mi_arduino.digitalWrite(pinLed(4),0);
     mi_arduino.digitalWrite(pinLed(5),0);
-    pause(0.5); %Para la ejecuci髇 un segundo
+    pause(0.5); %Para la ejecuci贸n un segundo
     mi_arduino.digitalWrite(pinLed(1),0);
     mi_arduino.digitalWrite(pinLed(2),0);
     mi_arduino.digitalWrite(pinLed(3),1);
     mi_arduino.digitalWrite(pinLed(4),0);
     mi_arduino.digitalWrite(pinLed(5),0);
-    pause(0.5); %Para la ejecuci髇 un segundo
+    pause(0.5); %Para la ejecuci贸n un segundo
     mi_arduino.digitalWrite(pinLed(1),0);
     mi_arduino.digitalWrite(pinLed(2),0);
     mi_arduino.digitalWrite(pinLed(3),0);
     mi_arduino.digitalWrite(pinLed(4),1);
     mi_arduino.digitalWrite(pinLed(5),0);
-    pause(0.5); %Para la ejecuci髇 un segundo
+    pause(0.5); %Para la ejecuci贸n un segundo
     mi_arduino.digitalWrite(pinLed(1),0);
     mi_arduino.digitalWrite(pinLed(2),0);
     mi_arduino.digitalWrite(pinLed(3),0);
     mi_arduino.digitalWrite(pinLed(4),0);
     mi_arduino.digitalWrite(pinLed(5),1);
-    pause(0.5); %Para la ejecuci髇 un segundo
+    pause(0.5); %Para la ejecuci贸n un segundo
     
 end
  
